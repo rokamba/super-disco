@@ -26,8 +26,10 @@ for (let i = 0; i < 9; i++){
 dueTime();
 
 var saveData = function(){
+    
     var el = $(this)
-    var keyVal = el.attr("id")
+    console.log(el);
+    var keyVal = el.siblings(".hour").attr("id")
     var textVal = el.siblings(".hourtext").val()
     localStorage.setItem(keyVal,textVal);
 }
